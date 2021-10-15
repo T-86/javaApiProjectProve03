@@ -22,7 +22,7 @@ public class WeatherForecast {
     public String toString() {
         StringBuilder weatherForcastString = new StringBuilder();
         for (WeatherForecastItem item : list){
-            weatherForcastString.append(item.toString() + "\n");
+            weatherForcastString.append(item.toString()).append("\n");
         }
                   return weatherForcastString.toString();
              }
@@ -81,8 +81,7 @@ public class WeatherForecast {
             e.printStackTrace();
         } finally {
             connection.disconnect();
-        }
-        }
+        }        }
 
 
 

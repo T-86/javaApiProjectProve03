@@ -23,10 +23,9 @@ public class WeatherForecastItem {
 
     @Override
     public String toString() {
-        return "\ndt_txt: " + dt_txt +
+        return  "\ndt_txt: " + dt_txt +
                 "\nTemp: " + measurements.get("temp_max") + " / " + measurements.get("temp_min") +
                 "\nWeather: " + weather.get(0).getDescription() +
-                "\nWind: " + wind.getSpeed() +
-                    '}';
+                "\nWind: " + wind.getSpeed();
     }
 }
